@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffaf3;
+    color:#333;
+}
+
+
+/* Header */
+
+header{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1585937421612-70a008356fbe")
+    center/cover;
+
+    color:white;
+}
+
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+
+nav h2{
+    font-size:28px;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+
+.hero h1{
+    font-size:50px;
+    max-width:850px;
+    margin:auto;
+}
+
+
+.hero p{
+    font-size:20px;
+    margin:25px auto;
+    max-width:650px;
+}
+
+
+.button{
+    display:inline-block;
+    background:#f4a300;
+    color:black;
+    padding:16px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+.phone a{
+    color:white;
+    text-decoration:none;
+}
+
+
+/* Sections */
+
+section{
+    padding:70px 8%;
+}
+
+
+section h2{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+.card h3{
+    margin-bottom:15px;
+}
+
+
+
+/* Menu */
+
+.food{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(170px,1fr));
+
+    gap:20px;
+}
+
+
+.food span{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    font-weight:bold;
+}
+
+
+
+/* Form */
+
+form{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+
+button{
+
+    width:100%;
+    padding:16px;
+
+    background:#b52b27;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+    background:#8e1f1c;
+}
+
+
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero{
+    padding-top:80px;
+}
+
+nav h2{
+    font-size:22px;
+}
+
+}
